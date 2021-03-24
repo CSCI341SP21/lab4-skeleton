@@ -20,19 +20,6 @@ void serve_request(int);
 char * request_str = "HTTP/1.0 200 OK\r\n"
         "Content-type: text/html; charset=UTF-8\r\n\r\n";
 
-
-char * index_hdr = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\"><html>"
-        "<title>Directory listing for %s</title>"
-"<body>"
-"<h2>Directory listing for %s</h2><hr><ul>";
-
-// snprintf(output_buffer,4096,index_hdr,filename,filename);
-
-
-char * index_body = "<li><a href=\"%s\">%s</a>";
-
-char * index_ftr = "</ul><hr></body></html>";
-
 /* char* parseRequest(char* request)
  * Args: HTTP request of the form "GET /path/to/resource HTTP/1.X" 
  *
